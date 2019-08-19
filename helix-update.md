@@ -7,8 +7,11 @@ q3 2019
 
 ---
 
+![zen](https://images.unsplash.com/photo-1558927354-c234e57a442d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)
+
+
 # Zen
-> Intelligent digital experience creation and delivery for the next 25 years.
+> Intelligent digital experience creation and delivery<br> for the next 25 years.
 
 ---
 
