@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="/style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<script src="https://d6uhzlpot4xwe.cloudfront.net/runtime/1.21/themes/wiper-fonts.gz.js"></script>
+<script>
+    document.write('<div id="stage"><div id="content"></div></div>');
+
+    function next() {
+        currentSlide++;
+        if (currentSlide>totalSlides) currentSlide=1;
+        goto(currentSlide);
+    }
+
+    function prev() {
+        currentSlide--;
+        if (currentSlide<1) currentSlide=totalSlides;
+        goto(currentSlide);
+
+    }
+
+    function goto(slide) {
+        currentSlide=slide;
+        var selector=`main>div:nth-of-type(${slide})`;
+        var div=document.querySelector(selector);
+        var stage=document.getElementById("stage");
+        var stageContent=document.getElementById("content");
+        var content="";
+        var background="";
+        div.childNodes.forEach((e) => { 
+            if (e.tagName) {
+                if (e.querySelector("img")) {
+                    var img=e.querySelector("img");
+                    background = "url("+img.attributes.src.value+")";
+                } else {
+                    content+=e.outerHTML;
+                }
+            }
+        })
+        stageContent.innerHTML = content;
+        stage.style.backgroundImage = background;
+    }
+
+    function keys(e) {
+        var k=e.keyCode;
+        if (k == 37 || k == 38) prev();
+        if (k == 32 || k == 39 || k == 40) next();
+
+    }
+
+    function init() {
+        totalSlides=document.querySelectorAll("main>div").length;
+        document.body.onkeydown=keys;
+        document.body.onclick=next;
+        goto(1);
+
+    }
+    var currentSlide=0;
+    var totalSlides=0;
+    window.onload=init;
+
+</script>
