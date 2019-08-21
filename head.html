@@ -26,14 +26,16 @@
         var stageContent=document.getElementById("content");
         var content="";
         var background="";
+        var counter=0;
         div.childNodes.forEach((e) => { 
             if (e.tagName) {
-                if (e.querySelector("img")) {
+                if (e.querySelector("img") && counter==0) {
                     var img=e.querySelector("img");
                     background = "url("+img.attributes.src.value+")";
                 } else {
                     content+=e.outerHTML;
                 }
+                counter++;
             }
         })
         stageContent.innerHTML = content;

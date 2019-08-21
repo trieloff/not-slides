@@ -15,20 +15,29 @@ q3 2019
 
 ---
 
-# Context - Technology
-AEM's technology choices are 20 years old
+# AEM Technology
+
+AEM's technology choices are 20 years old and served us well for the past 20 years
+
 Java was very early, no cloud, no mobile
 
 ---
 
-# Context - CMS
-Experience Delivery
-Content and Experience Authoring
-Content Repository
+# Experience Management 
+
+![cms](cms-chart.svg)
 
 ---
 
-# Context - CMS - Traditional & New Players
+# Experience Management 
+
+![cms](cms-chart-2.svg)
+
+---
+
+# New Players
+
+![cms](cms-chart-3.svg)
 
 ---
 
