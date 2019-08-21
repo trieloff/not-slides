@@ -27,6 +27,7 @@
     width: 100vw;
     background-size: cover;
     background-position: center center;
+    transition: background-image 0.5s ease-in-out;
 }
 
 #stage h1 {
@@ -150,6 +151,22 @@ table {
     border-spacing: 0;    
 }
 
+.scaleup {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+              transform: scale(0.9);
+              opacity: 0;
+    }
+    100% {
+              transform: scale(1);
+              opacity: 1;
+    }
+  }
+
+
 
 @media (min-width:600px) {
 
@@ -184,6 +201,7 @@ table {
     }
 
 }
+
 
 @media (min-width:900px) {
     .default, footer div {

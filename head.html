@@ -37,6 +37,15 @@
             }
         })
         stageContent.innerHTML = content;
+
+        var stagger=50;
+        stageContent.childNodes.forEach((e) => { 
+            if (e.tagName) {
+                e.classList.add("scaleup");
+                e.style.animationDelay=stagger+"ms";
+                stagger=+200;
+            }
+        });
         stage.style.backgroundImage = background;
     }
 
