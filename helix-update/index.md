@@ -43,7 +43,7 @@ Java was very early, no cloud, no mobile
 
 # Vision
 
-> Project Helix is AEM X
+> Project Helix is AEM Sites X
 
 ---
 
