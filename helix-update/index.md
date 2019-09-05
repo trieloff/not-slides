@@ -11,7 +11,7 @@ q3 2019
 
 
 # Zen
-> Intelligent digital experience creation and delivery<br> for the next 25 years.
+> Intelligent digital experience creation and delivery<br> for the next 20 years.
 
 ---
 
@@ -43,7 +43,7 @@ Java was very early, no cloud, no mobile
 
 # Vision
 
-> Project Helix is AEM X
+> Project Helix is AEM Sites X
 
 ---
 
