@@ -68,7 +68,7 @@
         document.body.ontouchend=next;
         var slide = 1;
         if (window.location.hash) {
-          var hash = parseInt(window.location.hash);
+          var hash = parseInt(window.location.hash.substring(1));
           if (hash === NaN || hash > totalSlides) {
             slide = hash;
           }
