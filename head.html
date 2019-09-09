@@ -62,6 +62,7 @@
         totalSlides=document.querySelectorAll("main>div").length;
         document.body.onkeydown=keys;
         document.body.onclick=next;
+        document.body.ontouchend=next;
         goto(1);
 
     }
