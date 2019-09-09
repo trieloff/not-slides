@@ -5,6 +5,8 @@
 <script>
     document.write('<div id="stage"><div id="content"></div></div>');
 
+    var totalSlides, currentSlide;
+
     function next() {
         currentSlide++;
         if (currentSlide>totalSlides) currentSlide=1;
@@ -49,6 +51,7 @@
             }
         });
         stage.style.backgroundImage = background;
+        window.location.hash = currentSlide;
     }
 
     function keys(e) {
@@ -63,7 +66,14 @@
         document.body.onkeydown=keys;
         document.body.onclick=next;
         document.body.ontouchend=next;
-        goto(1);
+        var slide = 1;
+        if (window.location.hash) {
+          var hash = parseInt(window.location.hash);
+          if (hash === NaN || hash > totalSlides) {
+            slide = hash;
+          }
+        }
+        goto(slide);
 
     }
     var currentSlide=0;
