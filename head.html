@@ -5,8 +5,6 @@
 <script>
     document.write('<div id="stage"><div id="content"></div></div>');
 
-    var totalSlides, currentSlide;
-
     function next() {
         currentSlide++;
         if (currentSlide>totalSlides) currentSlide=1;
@@ -58,7 +56,18 @@
         var k=e.keyCode;
         if (k == 37 || k == 38) prev();
         if (k == 32 || k == 39 || k == 40) next();
+    }
 
+    function findSlide(win, fallback) {
+        if (win.location.hash) {
+            var hash = parseInt(win.location.hash.substring(1));
+            if (hash !== NaN && hash <= totalSlides) {
+                goto(hash);
+            }
+        }
+        if (fallback) {
+            goto(fallback);
+        }
     }
 
     function init() {
@@ -66,15 +75,10 @@
         document.body.onkeydown=keys;
         document.body.onclick=next;
         document.body.ontouchend=next;
-        var slide = 1;
-        if (window.location.hash) {
-          var hash = parseInt(window.location.hash.substring(1));
-          if (hash !== NaN && hash <= totalSlides) {
-            slide = hash;
-          }
+        findSlide(window, 1);
+        window.onpopstate = function(e) {
+            findSlide(e.currentTarget);
         }
-        goto(slide);
-
     }
     var currentSlide=0;
     var totalSlides=0;
