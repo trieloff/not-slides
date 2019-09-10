@@ -80,8 +80,8 @@
         document.body.onkeydown=keys;
         document.body.onclick=next;
         document.addEventListener('swiped-up', prev);
-        document.addEventListener('swiped-left', prev);
-        document.addEventListener('swiped-right', next);
+        document.addEventListener('swiped-left', next);
+        document.addEventListener('swiped-right', prev);
         document.addEventListener('swiped-down', next);
         hash2slide(window.location.hash, 1);
         window.onpopstate = function(e) {
