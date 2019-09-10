@@ -58,16 +58,15 @@
         if (k == 32 || k == 39 || k == 40) next();
     }
 
-    function findSlide(win, fallback) {
-        if (win.location.hash) {
-            var hash = parseInt(win.location.hash.substring(1));
+    function hash2slide(hash) {
+        if (hash) {
+            hash = parseInt(hash.substring(1));
             if (hash !== NaN && hash <= totalSlides) {
                 return goto(hash);
             }
         }
-        if (fallback) {
-            goto(fallback);
-        }
+        // fallback
+        goto(1);
     }
 
     function init() {
@@ -75,9 +74,9 @@
         document.body.onkeydown=keys;
         document.body.onclick=next;
         document.body.ontouchend=next;
-        findSlide(window, 1);
+        hash2slide(window.location.hash, 1);
         window.onpopstate = function(e) {
-            findSlide(e.currentTarget);
+            hash2slide(e.currentTarget.location.hash);
         }
     }
     var currentSlide=0;
