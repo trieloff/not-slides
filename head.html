@@ -48,6 +48,11 @@
                 stagger=+200;
             }
         });
+        if (background) {
+            stage.className="image-bg";
+        } else {
+            stage.className="no-image-bg";
+        }
         stage.style.backgroundImage = background;
         window.location.hash = currentSlide;
     }
