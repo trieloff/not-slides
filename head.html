@@ -62,7 +62,7 @@
         if (win.location.hash) {
             var hash = parseInt(win.location.hash.substring(1));
             if (hash !== NaN && hash <= totalSlides) {
-                goto(hash);
+                return goto(hash);
             }
         }
         if (fallback) {
