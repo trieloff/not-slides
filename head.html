@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <script src="https://d6uhzlpot4xwe.cloudfront.net/runtime/1.21/themes/wiper-fonts.gz.js"></script>
+<script src="/swiped-events.min.js"></script>
 <script>
     document.write('<div id="stage"><div id="content"></div></div>');
 
@@ -73,7 +74,10 @@
         totalSlides=document.querySelectorAll("main>div").length;
         document.body.onkeydown=keys;
         document.body.onclick=next;
-        document.body.ontouchend=next;
+        document.addEventListener('swiped-up', prev);
+        document.addEventListener('swiped-left', prev);
+        document.addEventListener('swiped-right', next);
+        document.addEventListener('swiped-down', next);
         hash2slide(window.location.hash, 1);
         window.onpopstate = function(e) {
             hash2slide(e.currentTarget.location.hash);
