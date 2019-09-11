@@ -84,7 +84,9 @@
         document.addEventListener('swiped-right', prev);
         document.addEventListener('swiped-down', next);
         [...document.getElementsByTagName('a')].forEach((link) => {
-          link.onclick = e => e.stopPropagation();
+          link.onclick = (e) => {
+            e.stopPropagation();
+          };
           link.target = '_blank';
         });
         hash2slide(window.location.hash, 1);
