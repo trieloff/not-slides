@@ -83,6 +83,10 @@
         document.addEventListener('swiped-left', next);
         document.addEventListener('swiped-right', prev);
         document.addEventListener('swiped-down', next);
+        [...document.getElementsByTagName('a')].forEach((link) => {
+          link.onclick = e => e.stopPropagation();
+          link.target = '_blank';
+        });
         hash2slide(window.location.hash, 1);
         window.onpopstate = function(e) {
             hash2slide(e.currentTarget.location.hash);
