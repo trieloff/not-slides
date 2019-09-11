@@ -50,6 +50,10 @@ p {
     line-height: 1.1em;
 }
 
+ol, ul {
+    font-size: 2.5rem;
+}
+
 #stage #content {
     position: absolute;
     height: 100vh;
@@ -62,7 +66,6 @@ p {
 
 #stage.image-bg ol,
 #stage.image-bg ul {
-    font-size: 2.5rem;
     color: white;
     text-shadow: 0px 0px 3px #000000;
     margin: 1em auto;
