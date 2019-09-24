@@ -53,7 +53,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ![](https://raw.githubusercontent.com/trieloff/not-slides/master/06.jpg)
 
-# Example parallelism
+# Example: parallelism
 
 <!-- 7. Exhibit B: In traditional computing, one of the hardest problems is concurrency. In serverless, concurrency is still a hard problem, but one aspect of it, parallelism has become very easy (and when I say very easy, I mean: someone else's problem). Before serverless, you had a limited number of jobs you could run in parallel before you ran out of resources. In the serverless world, these limits are just a setting in your AWS account preferences. Running a small job for every customer at once? Just do it, the runtime will figure out how and when to do it. -->
 
