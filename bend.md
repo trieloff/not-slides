@@ -1,4 +1,4 @@
-![](01.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/01.jpg)
 
 # Bending your Brain for Serverless Success
 
@@ -6,7 +6,7 @@ Lars Trieloff
 
 ---
 
-![](02.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/02.jpg)
 
 # 1st step: Admitting your brain needs bending
 
@@ -16,7 +16,7 @@ Serverful habits die hard
 
 ---
 
-![](03.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/03.jpg)
 
 # But WHY?
 
@@ -26,7 +26,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](03.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/03.jpg)
 
 # Serverless disrupts architecture
 
@@ -35,7 +35,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](04.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/04.jpg)
 
 # What is architecture?
 
@@ -43,7 +43,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](05.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/05.jpg)
 
 # Example: dev-stage-prod
 
@@ -51,7 +51,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](06.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/06.jpg)
 
 # Example parallelism
 
@@ -59,7 +59,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](06.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/06.jpg)
 
 # Servers are an implementation detail
 
@@ -67,7 +67,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](07.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/07.jpg)
 
 # Serverless: Functional Programming applied to software architecture
 
@@ -75,7 +75,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](08.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/08.jpg)
 
 # Constraints shape architecture
 
@@ -83,7 +83,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](15.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/15.jpg)
 
 # Overcoming Latency (Constraint #1)
 
@@ -93,7 +93,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 ---
 
-![](09.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/09.jpg)
 
 # How *not* to overcome latency
 
@@ -105,7 +105,7 @@ Pinging your functions to keep them "warm" won't help with cold starts – and b
 
 ---
 
-![](10.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/10.jpg)
 
 # Three Signs of Server Addiction
 
@@ -117,7 +117,7 @@ Pinging your functions to keep them "warm" won't help with cold starts – and b
 
 ---
 
-![](11.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/11.jpg)
 
 # Every problem in serverless can be solved by adding another function.
 
@@ -125,7 +125,7 @@ Pinging your functions to keep them "warm" won't help with cold starts – and b
 
 ---
 
-![](12.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/12.jpg)
 
 # Think like a bee keeper
 
@@ -133,7 +133,7 @@ Pinging your functions to keep them "warm" won't help with cold starts – and b
 
 ---
 
-![](13.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/13.jpg)
 
 # Monitor before it's too late
 
@@ -143,7 +143,7 @@ When your function has run (and is gone), it's too late.
 
 ---
 
-![](14.jpg)
+![](https://raw.githubusercontent.com/trieloff/not-slides/master/14.jpg)
 
 # Brain already bent?
 
