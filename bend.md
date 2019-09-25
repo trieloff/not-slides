@@ -103,7 +103,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 # How *not* to overcome latency
 
-Pinging your functions to keep them "warm" won't help with cold starts – and brings in servers through the back door.
+[Pinging your functions to keep them "warm" won't help with cold starts](https://www.slideshare.net/theburningmonk/debunking-serverless-myths/51) – and brings in servers through the back door.
 
 **Avoid server addiction**
 
