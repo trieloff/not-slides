@@ -2,7 +2,7 @@
 
 # Bending your Brain for Serverless Success
 
-[Lars Trieloff](mailto:trieloff@adobe.com)
+Lars Trieloff
 
 ---
 
@@ -47,8 +47,6 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 # Example: dev-stage-prod
 
-[The `newfinalfinal_v2.psd` of Serverless](https://medium.com/adobetech/the-newfinalfinal-v2-psd-of-serverless-computing-5d9b9965d9c1)
-
 <!-- 6. Exhibit A: In a traditional computing world, buying hardware costs money. In a traditional cloud world, having instances running costs money. That's why we came up with a good trade-off between cost and ability to test without interrupting production: the trinity of dev-stage-prod. In a serverless world, having a function is free (as long as you don't run it), so there is no need to limit yourself to having only three versions of each function: you can have an infinite amount. -->
 
 ---
@@ -65,8 +63,6 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 # Servers are an implementation detail
 
-[(Why I don't care about containers)](https://medium.com/adobetech/why-i-a-serverless-developer-dont-care-about-your-containers-40c08d36aee4)
-
 <!-- 8. Servers are an implementation detail. In every serverless presentation there is always one guy (and it's always a guy) who needs to point out: but there are still servers!. The point of serverless is not that there are no servers – the point is that the servers could go away and we wouldn't mind.  If you figure out a way to offer serverless computing without using containers, or without using virtual machines, or without using real machines and instead use the brain waves of the magic quantum computing fairy, no serverless developer would bat an eye, as long as you don't break the API contract. In fact, if you promise lower cost or lower latency, they will be thrilled by it. -->
 
 ---
@@ -76,8 +72,6 @@ Serverless is the most disruptive change to enterprise software in the last two 
 # Serverless: Functional Programming applied to software architecture
 
 <!-- 9. Serverless is the application of functional programming concepts to software architecture. And just like functional programmers abhor side-effects and try to shield them with three layers of magic and monads (that's like Dungeons and Dragons, but with a LISP), serverless architects abhor state and try as much as possible to make it someone else's problem, either through event-based architectures, caches or cloud-based storage services. We love the convenience of this infrastructure, but just like indoor plumbing, while you might value the convenience, getting too enthusiastic about the plumbing will just make you look weird. -->
-
-[Serverless patterns & functional programming](https://acloud.guru/series/serverlessconf-nyc-2017/view/putting-the-f-in-faaa)
 
 ---
 
@@ -103,7 +97,7 @@ Serverless is the most disruptive change to enterprise software in the last two 
 
 # How *not* to overcome latency
 
-[Pinging your functions to keep them "warm" won't help with cold starts](https://www.slideshare.net/theburningmonk/debunking-serverless-myths/51) – and brings in servers through the back door.
+Pinging your functions to keep them "warm" won't help with cold starts – and brings in servers through the back door.
 
 **Avoid server addiction**
 
@@ -146,8 +140,6 @@ Serverless is the most disruptive change to enterprise software in the last two 
 When your function has run (and is gone), it's too late.
 
 <!-- 13. Monitoring: essential because legibility of Serverless architectures is limited. Many services and everything is ephemeral. By the time you’ve figured out there is a problem, it most likely already went away. But problems that disappear spontaneously, also reappear spontaneously. -->
-
-(We use [Epsagon](https://www.epsagon.com) and [New Relic](https://newrelic.com/products/synthetics))
 
 ---
 
